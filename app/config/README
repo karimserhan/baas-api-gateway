@@ -1,0 +1,19 @@
+App configuration is stored in the file config.json.
+
+--- config.json file structure
+This file contain entries for each environment: "default", "development", "testing", "staging", and "production".
+All configuration variables must be defined under the "default" entry. This will define the default configuration.
+Repeat the config variables for other environments if they need to be overridden.
+When adding new config variable please describe it at the bottom of the file.
+
+--- Selecting the environment
+The effective environment is determined by the NODE_ENV environment variable (under the root .env file).
+
+
+--- Configuration variables (in config.json)
+port:                   The port the server will listen on
+whitelistedDomains:     List of domains whitelisted for cross origin resource sharing
+
+--- Environment variables (in ..\.env)
+NODE_ENV:               The effective environment (development, testing, etc.)
+DOCKER_ON_MINIKUBE      Whether local docker is running over minikube (via minikube docker-env command)

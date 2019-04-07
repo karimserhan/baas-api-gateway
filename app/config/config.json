@@ -1,0 +1,12 @@
+{
+    "development": {
+        "port": 3000,
+        "whitelistedDomains": []
+    },
+    "testing": {
+    },
+    "staging": {
+    },
+    "production": {
+    }
+}
